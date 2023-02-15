@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Want to know your placement</h3>
+    <table border="1px">
+        <tr>
+            <th>City</th>
+            <th>Package</th>
+        </tr>
+        <tr>
+            <td id="col1">&nbsp</td>
+            <td id="col2">&nbsp</td>
+        </tr>
+        <tr>
+            <th colspan="2"><button onclick="function1()">Know your Placement</button></th>
+        </tr>
+    </table>
+    <script>
+        function function1(){
+            const cities = ["Bangalore", "Hyderabad", "Chennai", "Mumbai", "New Delhi","Pune"];
+            var x = Math.floor(Math.random()*cities.length);
+            var y = Math.floor(Math.random()*71)+5;
+            document.getElementById("col1").innerHTML = cities[x];
+            document.getElementById("col2").innerHTML = y.toString() +" "+"lakhs"
+        }
+    </script>
+</body>
+</html>
